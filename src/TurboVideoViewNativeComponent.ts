@@ -2,7 +2,12 @@ import codegenNativeComponent from 'react-native/Libraries/Utilities/codegenNati
 import type { ViewProps } from 'react-native';
 
 interface NativeProps extends ViewProps {
-  color?: string;
+  uri?: string;
+
+  width?: number;
+  height?: number;
+
+  currentDuration?: number;
 }
 
 export default codegenNativeComponent<NativeProps>('TurboVideoView');

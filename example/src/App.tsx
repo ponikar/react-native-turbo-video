@@ -6,7 +6,10 @@ import { TurboVideoView } from 'react-native-turbo-video';
 export default function App() {
   return (
     <View style={styles.container}>
-      <TurboVideoView color="#32a852" style={styles.box} />
+      <TurboVideoView
+        uri="https://www.pexels.com/download/video/5057528/?fps=25.0&h=1440&w=2560"
+        style={styles.box}
+      />
     </View>
   );
 }
@@ -16,10 +19,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: '#000',
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    width: "100%",
+    height: "500",
+   flex: 1,
   },
 });
